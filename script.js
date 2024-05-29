@@ -1,12 +1,12 @@
 function formSubmission(event) {
   var contactNumber = document.getElementById("contact").value;
   var contactValue = contactNumber.trim();
-  if (contactValue.length < 9) {
-    alert("Mobile number must be at least 9 characters long.");
+  if (!contactNumber) {
+    alert("Please enter your mobile number");
     // Prevent form submission
     event.preventDefault();
-  } else if (!contactNumber) {
-    alert("Please enter your mobile number");
+  } else if (contactNumber && contactValue < 9) {
+    alert("Mobile number must be at least 9 characters long.");
   } else {
     window.location.href = "registration.html";
   }
