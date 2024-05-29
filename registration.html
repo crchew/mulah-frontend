@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png">
+    <title>Mulah | Registration</title>
+</head>
+
+<body>
+    <div class="body-content">
+        <img src="assets/mulah_logo.png" alt="Mulah Logo"/>
+    <h1>
+        Registration
+    </h1>
+
+    <h4><i>Please fill up your details.</i></h4>
+
+    <form>
+        <label for="username">Name</label>
+        <input type="text" id="username" name="username" placeholder="Enter Name" required>
+        <div><i style="color:red">*Please insert a name</i></div>
+
+        <label for="userbirthday">Birthday</label>
+        <div>
+            <input type="number" id="birth-date" placeholder="DD" min="01" max="31" required>
+            <input type="number" id="birth-month" placeholder="MM" min="01" max="12" required>
+            <input type="number" id="birth-year" placeholder="YYYY" min="1910" max="2024" required>
+        </div>
+        <div><i style="color:red">*Please insert your birthday</i></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="useremail" name="useremail" placeholder="Enter Email" required>
+        <div><i style="color:red">*Please insert a valid email address</i></div>
+
+        <div>
+            <input type="checkbox" id="noemail" name="noemail" style="position: relative">
+            <label for="noemail" style="vertical-align: 1rem;">No Email Address</label>
+        </div>
+    </form>
+    <button type="submit" onclick="userRegistration()"><b>Continue</b></button>
+</div>
+
+<!-- JS script -->
+    <script src="script.js"></script>
+</body>
+
+<footer class="footer-style">
+    <hr>
+    <p>Powered by <a href="#">MulahRewards.Com</a></p>
+</footer>
+</html>
