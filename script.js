@@ -5,7 +5,7 @@ function formSubmission(event) {
     alert("Please enter your mobile number");
     // Prevent form submission
     event.preventDefault();
-  } else if (contactNumber && contactValue < 9) {
+  } else if (contactNumber && contactValue.length < 9) {
     alert("Mobile number must be at least 9 characters long.");
   } else {
     window.location.href = "registration.html";
